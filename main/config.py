@@ -21,9 +21,9 @@ NHANES_MAP = {
         "DMDEDUC2",
         "DMDMARTL",
         "WTMEC2YR",
-        "SDMVPSU",  
+        "SDMVPSU",
         "SDMVSTRA",
-
+        "RIDRETH3",
     ],
     # --- Questionnaire ---
     "DPQ_J": ["SEQN"]
@@ -50,6 +50,7 @@ NHANES_MAP = {
     "PBCD_J": ["SEQN", "LBXBCD", "LBXBPB", "LBXTHG"],
     "ALB_CR_J": ["SEQN", "URDACT"],
     "VID_J": ["SEQN", "LBXVIDMS"],
+    "DXX_J": ["SEQN", "DXDTOPF", "DXDTOLE", "DXXTRFAT"],
 }
 
 # ==============================================================================
@@ -62,6 +63,7 @@ RENAME_MAP = {
     # --- Demographics ---
     "RIAGENDR": "Gender",  # Gender
     "RIDAGEYR": "Age",  # Age
+    "RIDRETH3": "Race",
     "INDFMPIR": "Poverty_Ratio",  # Ratio of family income to poverty threshold
     "DMDEDUC2": "Education_Level",  # Education level (adults 20+)
     "DMDMARTL": "Marital_Status",  # Marital status
@@ -101,7 +103,9 @@ RENAME_MAP = {
     # --- Kidney & Vitamins ---
     "URDACT": "Albumin_Creatinine_Ratio",  # Albumin/creatinine ratio (renal health)
     "LBXVIDMS": "VitaminD_nmolL",  # Vitamin D (nmol/L)
-    "WTMEC2YR": "MEC_Weight",  # Full sample 2-year MEC exam weight
+    "DXDTOPF": "Body_Fat_Pct",  # Процент жира
+    "DXDTOLE": "Lean_Mass_g",  # Мышечная масса (г)
+    "DXXTRFAT": "Trunk_Fat_g",
 }
 
 # ==============================================================================
